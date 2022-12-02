@@ -13,7 +13,7 @@ data class RoomInfo(
         @GeneratedValue(strategy = GenerationType.AUTO)
         val Id: Long?=0,
         var roomInfo: String?=null,
-        var currentPrice: String?=null,
+        var currentPrice: Double?=0.0,
         var discountPercentage: Number?=0,
 
         var createdAt: LocalDateTime?= LocalDateTime.now(),
